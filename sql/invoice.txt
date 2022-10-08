@@ -1,0 +1,35 @@
+CREATE TABLE `invoice` (
+  `invoiceId` int(11) NOT NULL,
+  `kaeName` varchar(255) NOT NULL,
+  `invoiceNo` varchar(255) NOT NULL,
+  `invoiceUsername` varchar(255) NOT NULL,
+  `invoiceCompany` varchar(200) NOT NULL,
+  `create_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+ALTER TABLE `invoice`
+  ADD PRIMARY KEY (`invoiceId`);
+
+
+ALTER TABLE `invoice`
+  MODIFY `invoiceId` int(11) NOT NULL AUTO_INCREMENT;
+
+
+/***** SELECT RPGI INVOICES
+SELECT DISTINCT invoice.invoiceNo, cartorder.username, invoice.invoiceCompany,
+                Concat (cartorder.order_productname,'| Price: &#8369;',cartorder.order_productprice,'| ',cartorder.order_productqty,' qty | &#8369;',cartorder.productTotal) as Order_Details
+                FROM invoice 
+                RIGHT JOIN cartorder ON invoiceUsername = cartorder.username WHERE username = '".$_SESSION['username']."'  
+  *******/
+
+  /********** Loan Summary query w/ Total Balance
+  
+SELECT invoice.invoiceNo, invoice.invoiceUsername, invoice.invoiceCompany, SUM(cartorder.productTotal) AS 'Total_Balance', cartorder.create_date FROM invoice, cartorder WHERE cartorder.invoiceNo = invoice.invoiceNo GROUP BY cartorder.invoiceNo
+
+SELECT invoice.invoiceNo, invoice.invoiceUsername, invoice.invoiceCompany, SUM(cartorder.productTotal) AS 'Total_Balance', cartorder.create_date FROM invoice LEFT JOIN cartorder ON cartorder.invoiceNo = invoice.invoiceNo GROUP BY cartorder.invoiceNo
+
+  *************/
+
+
+

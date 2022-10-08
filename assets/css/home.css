@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+#one, #two, #three, #four{
+    font-family: sans-serif;
+}
+.container {
+    scroll-snap-type: y mandatory;
+    
+}
+section{
+    height: 25vh;
+    
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+#one{
+    
+    padding: 10rem;
+    background: linear-gradient(rgba(255,255,255,.8),rgba(255,255,255,.8)), white;
+    border-radius: 10px;
+    text-align: center;
+   
+}
+
+#two{
+    padding: 10rem;
+    text-align: center;
+    background-color: #5DADE2;
+    border-radius: 10px;
+   
+}
+
+#three{
+    padding: 10rem;
+    text-align: center;
+    background: linear-gradient(rgba(255,255,255,.8),rgba(255,255,255,.8)),white;
+    border-radius: 10px;
+    
+}
+#four{
+    height: 100vh;
+    text-align: center;
+    background-color: #5DADE2;
+    border-radius: 10px;
+}
+
+
+#logo-new{
+    
+    width: 25rem;
+    filter:drop-shadow( 3px 3px 3px gray);
+    
+}
+#logo-pic:hover{
+    filter: drop-shadow(3px 3px 3px #5DADE2);
+    
+
+}
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-size: 50px;
+    color: white;
+    
+}
+#info1{
+    padding-top: 10px;
+    line-height: 4rem;
+    font-size: 20px;
+    color:white ;
+
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+    background-color: gray  ;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    
+}
+#Apply-row{
+    column-gap: 10px;
+}
+#apply-row-col{
+    box-shadow: 0 2px 4px 0 gray;
+    border-radius: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding: 20px;
+}
+#btn-apply{
+    width: 10rem;
+    height: 5rem;
+}
+#brand-heading, #rgpi-heading{
+    color:#5DADE2;
+}

@@ -1,0 +1,23 @@
+CREATE TABLE `brandname` (
+  `id` int(11) NOT NULL,
+  `brandname` varchar(255) NOT NULL,
+  `create_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `brandname` (`id`, `brandname`,`create_date`) VALUES (NULL, 'BABY CARE', current_timestamp()),
+VALUES (1, 'FABRIC CARE', current_timestamp()),
+VALUES (2, 'FAMILY CARE', current_timestamp()),
+VALUES (3, 'FEMININE CARE', current_timestamp()),
+VALUES (4, 'GROOMING', current_timestamp()),
+VALUES (5, 'HARI CARE', current_timestamp()),
+VALUES (6, 'HOME CARE', current_timestamp()),
+VALUES (7, 'ORAL CARE', current_timestamp()),
+VALUES (8, 'PERSONAL HEALTH CARE', current_timestamp()),
+VALUES (9, 'SKIN AND PERSONAL CARE', current_timestamp());
+
+ALTER TABLE `brandname`
+  ADD PRIMARY KEY (`id`);
+
+
+ALTER TABLE `brandname`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;

@@ -1,0 +1,17 @@
+CREATE TABLE `branditems` (
+  `id` int(11) NOT NULL,
+  `item_id` int(11) NOT NULL,
+  `brandname` varchar(255) NOT NULL,
+  `brandsize` varchar(255) NOT NULL,
+  `create_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `branditems` (`id`, `item_id`, `brandname`, `brandsize`, `create_date`) 
+VALUES (NULL, 'BABY CARE', current_timestamp()),
+
+ALTER TABLE `branditems` 
+  ADD PRIMARY KEY (`id`);
+
+
+ALTER TABLE `branditems` 
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
