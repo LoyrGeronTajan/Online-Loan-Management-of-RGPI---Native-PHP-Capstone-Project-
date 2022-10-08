@@ -34,3 +34,5 @@ Customer Panel (url | filename:login.php)
   - Loan Shopping page is restricted because of Credit Limit.
 * Then the Operations Manager (Admin) will validate your credentials (Customer Interview).
   - After that Admin set your credit limit and then you can access the loan shopping page.
+* Loan Shopping
+  - Order Loan
