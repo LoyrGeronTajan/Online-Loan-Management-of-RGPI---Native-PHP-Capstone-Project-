@@ -1,5 +1,8 @@
 # Online Loan Management of RGPI - Native PHP
  Online Loan Management of Right Goods Philippines
+ 
+ -- database name: rgpi
+ -- sql file: rgpi.sql
 
 Operations Manger (Admin) Panel Credentials (url | filename:rgpi-login.php)
 * Credentials
